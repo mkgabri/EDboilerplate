@@ -1,0 +1,8 @@
+mixin user(name, avatar, countryCode, country)
+  .user
+    .user__avatar
+      img(src=`/assets/img/${avatar}`)
+    .user__data
+      .user__name=name
+      .user__country
+        img(src=`/assets/img/icon-flag-${countryCode}.svg`).user__flag=country
